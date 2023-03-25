@@ -25,19 +25,14 @@ riverctl spawn 'gsettings set org.gnome.desktop.wm.preferences button-layout ""'
 # Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
 riverctl map normal Super Return spawn alacritty
 
-riverctl map normal Super f spawn firefox
-
-riverctl map normal Super e spawn nemo 
-
-riverctl map normal Super g spawn geany
-
-riverctl map normal Super t spawn telegram-desktop 
-
-# Super+Q to close the focused view
-riverctl map normal Super Q close
-
-# Super+Shift+E to exit river
-riverctl map normal Super+Shift E exit
+riverctl map normal --to-code { 
+Super f spawn firefox-wayland
+Super e spawn nemo 
+Super g spawn geany
+Super t spawn telegram-desktop 
+Super Q close
+Super+Shift E exit
+}
 
 # Super+J and Super+K to focus the next/previous view in the layout stack
 riverctl map normal Super Right focus-view next
