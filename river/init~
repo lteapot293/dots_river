@@ -39,7 +39,6 @@ riverctl spawn '/lib/polkit-gnome/polkit-gnome-authentication-agent-1'
 riverctl map normal Super E spawn nemo
 riverctl map normal Super Return spawn kitty
 riverctl map normal Super G spawn gedit 
-riverctl map normal Super D spawn wofi --show drun --columns 2 -I -s ~/.config/wofi/style.css  
 # Super+Q to close the focused view
 riverctl map normal Super Q close
 
